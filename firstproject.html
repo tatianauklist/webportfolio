@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheets" href="styles.css"/>
+    <title>Survey</title>
+    </head>
+    <body>
+        <section id="geninfo">
+        <h1 id="title">Just a Random Form</h1>
+        <p>Welcome to my random form. I had to make a basic survey for freeCodeCamp and figured I'd go back and really spruce it up. So welcome to my form. Feel free to fill it out with random information because I'm not even sure it's being stored lol anyway, early thanks, bye!</p>
+        </section>
+        <section id="forminfo">
+            <form id="survey-form">
+                <fieldset id="user-info">
+                    <legend>General Information</legend>
+                    <label for="name">Name: <input type="text" id="name" placeholder="Jimmy John" required></label>
+                    <label for="email">Email: <input type="email" id="email" placeholder="jimmy.john@website.com" required></label>
+                    <label for="level">Zero sugar or full sugar soda? <input type="radio" name="level" id="level" value="Sugar">Sugar
+                        <input type="radio" name="level" id="level" value="Zero">Zero
+                    </label>
+                </fieldset>
+                <fieldset id="deephits">
+                    <legend>The Deep Tracks</legend>
+                    <label for="numbers">What's your favorite number? <input type="number" min="0" max="5000000"></label>
+                    <label for="spotify">Are you a Spotify, Apple Music or YouTube Music person? <input type="radio" name="service" id="spotify" value="Spotify" required> Spotify
+                    <input type="radio" name="service" id="spotify" value="apple" required> Apple Music
+                    <input type="radio" name="service" id="spotify" value="youtube" required> YouTube Music
+                    </label>
+                </fieldset>
+                <fieldset id="legal">
+                    <legend>The Legal Nonsense</legend>
+                    <label for="check">Is there an answer?
+                        <input type="checkbox" id="check" value="Yes, ofc"> Yes, ofc
+                        <input type="checkbox" id="check" value="Maybe"> Mehbe
+                        <input type="checkbox" id="check" value="nah"> Nah brah
+                    </label>
+                    <label for="drop">Do you like scary movies?
+                        <select id="drop">
+                            <option>Select one</option>
+                            <option>Nope, no thank you</option>
+                            <option>Meh, depends</option>
+                            <option>Not too scary, but sure</option>
+                            <option>Yes, I hate myself</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset id="joke">
+                    <legend>Jokes</legend>
+                    <label for="jokes">What's your favorite dad joke?</label>
+                    <textarea id="jokes" placeholder="Write your joke here, thx"></textarea>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
